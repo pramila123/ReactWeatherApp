@@ -1,24 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import Weather from "./components/Weather";
+import {Accordion, Container,Grid} from '@material-ui/core'
+import Practice from "./components/Practice";
 
+const items=[
+  {
+    title:'Web development',
+    content:'Able to create and design website ',
+  },
+  {
+    title:'Python',
+    content:'Able to create and design website ',
+  },
+  {
+    title:'Java',
+    content:'Able to create and design website ',
+  },
+
+]
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    {/* <Container>
+      <Grid xs={12} md={12}>
+    <Weather/>
+    </Grid>
+    </Container> */}
+
+   <Practice item={items}/>
+     
+    </>
   );
 }
 
